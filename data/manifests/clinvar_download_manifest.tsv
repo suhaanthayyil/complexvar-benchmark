@@ -1,0 +1,4 @@
+dataset	downloaded_at_utc	local_path	md5	notes	size_bytes	source_record	source_url	status
+clinvar	2026-04-11T21:18:01.591074+00:00	/Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz	ce99396f6bb929b297e2d83f8084095a		190687335	clinvar	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz	skipped
+clinvar	2026-04-11T21:18:03.714069+00:00	/Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/variant_summary.txt.gz	8730e1908f363e63bc6f10ebf07b2447		436129069	clinvar	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz	skipped
+clinvar	2026-04-11T21:18:03.718685+00:00	/Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz.tbi	1c7a9c0221234ba4d3d2cecaf969717f		609879	clinvar	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz.tbi	skipped

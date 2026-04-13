@@ -1,0 +1,17 @@
+name: complexvar
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - mmseqs2
+  - dssp
+  - freesasa
+  - snakemake>=8.10
+  - pip:
+      - -e ".[boost,dev]"
+      - fair-esm>=2.0.0
+      - torch>=2.2
+      - torch-geometric>=2.5
+      - transformers>=4.41

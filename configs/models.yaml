@@ -1,0 +1,29 @@
+sequence_baseline:
+  model_name: facebook/esm2_t6_8M_UR50D
+  hidden_dim: 64
+  dropout: 0.1
+
+ddg_proxy_logistic:
+  penalty: l2
+  class_weight: balanced
+  max_iter: 1000
+
+struct_xgboost:
+  model: xgboost
+  max_depth: 4
+  n_estimators: 300
+  learning_rate: 0.05
+  subsample: 0.9
+  colsample_bytree: 0.9
+
+monomer_gnn:
+  architecture: GINE
+  hidden_dim: 128
+  layers: 3
+  dropout: 0.1
+
+complex_gnn:
+  architecture: GINE
+  hidden_dim: 128
+  layers: 3
+  dropout: 0.1

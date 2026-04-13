@@ -1,0 +1,11 @@
+2026-04-11 15:09:30,657 INFO download https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz
+2026-04-11 16:06:17,216 INFO download https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz
+2026-04-11 16:06:22,498 WARNING renamed unverified existing file to /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/variant_summary.txt.gz.unverified.20260411T200622Z before redownload
+2026-04-11 16:06:22,721 INFO download https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/variant_summary.txt.gz
+2026-04-11 16:06:32,985 INFO download https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz.tbi -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz.tbi
+2026-04-11 16:24:48,565 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz
+2026-04-11 16:24:50,102 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/variant_summary.txt.gz
+2026-04-11 16:24:51,153 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz.tbi
+2026-04-11 17:18:01,134 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz
+2026-04-11 17:18:02,663 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/variant_summary.txt.gz
+2026-04-11 17:18:03,717 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/clinvar/clinvar.vcf.gz.tbi

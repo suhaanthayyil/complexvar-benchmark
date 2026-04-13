@@ -1,0 +1,23 @@
+{
+  "test": {
+    "family_group": 88,
+    "partner_cluster": 93,
+    "protein_cluster": 88,
+    "samples": 1036,
+    "split_group": 91
+  },
+  "train": {
+    "family_group": 360,
+    "partner_cluster": 352,
+    "protein_cluster": 319,
+    "samples": 7728,
+    "split_group": 421
+  },
+  "val": {
+    "family_group": 81,
+    "partner_cluster": 95,
+    "protein_cluster": 93,
+    "samples": 2868,
+    "split_group": 90
+  }
+}

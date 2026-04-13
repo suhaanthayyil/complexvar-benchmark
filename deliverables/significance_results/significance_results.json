@@ -1,0 +1,71 @@
+{
+  "sequence_auroc_bootstrap": {
+    "mean": 0.6454,
+    "std": 0.0194,
+    "ci_lower": 0.6072,
+    "ci_upper": 0.6834
+  },
+  "monomer_gnn_auroc_bootstrap": {
+    "mean": 0.7134,
+    "std": 0.0176,
+    "ci_lower": 0.6779,
+    "ci_upper": 0.7472
+  },
+  "complex_gnn_auroc_bootstrap": {
+    "mean": 0.731,
+    "std": 0.0172,
+    "ci_lower": 0.6965,
+    "ci_upper": 0.7633
+  },
+  "sequence_spearman_bootstrap": {
+    "mean": 0.3356,
+    "std": 0.035,
+    "ci_lower": 0.2673,
+    "ci_upper": 0.4041
+  },
+  "monomer_gnn_spearman_bootstrap": {
+    "mean": 0.4063,
+    "std": 0.0299,
+    "ci_lower": 0.3453,
+    "ci_upper": 0.4621
+  },
+  "complex_gnn_spearman_bootstrap": {
+    "mean": 0.458,
+    "std": 0.0283,
+    "ci_lower": 0.4027,
+    "ci_upper": 0.5106
+  },
+  "complex_vs_monomer_bootstrap": {
+    "delta_mean": 0.0176,
+    "delta_ci_lower": 0.0002,
+    "delta_ci_upper": 0.0344,
+    "p_value": 0.0235,
+    "wins_a_frac": 0.9765
+  },
+  "complex_vs_sequence_bootstrap": {
+    "delta_mean": 0.0856,
+    "delta_ci_lower": 0.0425,
+    "delta_ci_upper": 0.1269,
+    "p_value": 0.0,
+    "wins_a_frac": 1.0
+  },
+  "complex_vs_monomer_delong": {
+    "auc_a": 0.7315,
+    "auc_b": 0.7137,
+    "z_statistic": 2.0337,
+    "p_value": 0.042
+  },
+  "complex_vs_sequence_delong": {
+    "auc_a": 0.7315,
+    "auc_b": 0.6457,
+    "z_statistic": 3.9306,
+    "p_value": 0.0001
+  },
+  "interface_proximal_complex_vs_monomer": {
+    "delta_mean": 0.02,
+    "delta_ci_lower": 0.0011,
+    "delta_ci_upper": 0.0395,
+    "p_value": 0.019,
+    "wins_a_frac": 0.981
+  }
+}

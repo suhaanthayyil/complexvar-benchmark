@@ -1,0 +1,24 @@
+2026-04-11 15:09:26,359 INFO download https://archive.bioinfo.se/huintaf2/table_AF2_HURI_HuMap_UNIQUE.csv -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv
+2026-04-11 15:09:30,017 WARNING Zenodo record 7505985 did not match expected Burke assets
+2026-04-11 15:09:30,656 ERROR Burke archive download blocked by free space
+2026-04-11 16:06:11,158 WARNING renamed unverified existing file to /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv.unverified.20260411T200611Z before redownload
+2026-04-11 16:06:12,307 INFO download https://archive.bioinfo.se/huintaf2/table_AF2_HURI_HuMap_UNIQUE.csv -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv
+2026-04-11 16:06:16,248 WARNING Zenodo record 7505985 did not match expected Burke assets
+2026-04-11 16:06:16,989 ERROR Burke archive download blocked by free space
+2026-04-11 16:24:45,677 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv
+2026-04-11 16:24:47,361 WARNING Zenodo record 7505985 did not match expected Burke assets
+2026-04-11 16:24:48,094 ERROR Burke archive download blocked by free space
+2026-04-11 17:17:57,708 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv
+2026-04-11 17:17:59,164 WARNING Zenodo record 7505985 did not match expected Burke assets
+2026-04-11 17:18:00,661 ERROR Burke archive download blocked by free space
+2026-04-11 18:04:03,061 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/table_AF2_HURI_HuMap_UNIQUE.csv
+2026-04-11 18:04:04,614 WARNING Zenodo record 7505985 did not match expected Burke assets
+2026-04-11 18:04:06,884 INFO download https://ndownloader.figshare.com/files/31531142 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/random.zip
+2026-04-11 18:04:27,788 INFO download https://ndownloader.figshare.com/files/31531172 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/humap.zip
+2026-04-11 18:07:12,895 INFO download https://ndownloader.figshare.com/files/31531253 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/HuRI.zip
+2026-04-11 18:13:31,701 INFO download https://ndownloader.figshare.com/files/31531259 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/HuRI-single.zip
+2026-04-11 18:14:00,596 INFO download https://ndownloader.figshare.com/files/31531544 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/HuMap-single.zip
+2026-04-11 18:14:41,325 INFO download https://ndownloader.figshare.com/files/31550891 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/manifest.txt
+2026-04-11 18:14:43,099 INFO download https://ndownloader.figshare.com/files/31550894 -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/burke/archives/README.txt
+2026-04-11 18:15:06,392 INFO extracted 1536 files from HuRI.zip
+2026-04-11 18:15:18,562 INFO extracted 1309 files from humap.zip

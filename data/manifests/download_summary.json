@@ -1,0 +1,11 @@
+{
+  "blockers": [],
+  "checksums_path": "/Users/suhaan/Documents/Coding/NovelRP/data/manifests/checksums.md5",
+  "datasets": [
+    "burke",
+    "alphafold"
+  ],
+  "free_space_bytes": 21817675776,
+  "manifest_path": "/Users/suhaan/Documents/Coding/NovelRP/data/manifests/download_manifest.tsv",
+  "rows_written": 8749
+}

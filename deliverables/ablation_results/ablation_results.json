@@ -1,0 +1,87 @@
+{
+  "none": {
+    "ablation": "none",
+    "overall": {
+      "auroc": 0.7538,
+      "auprc": 0.6345,
+      "mcc": 0.353,
+      "n": 1052,
+      "spearman": 0.4622
+    },
+    "interface_proximal": {
+      "auroc": 0.7224,
+      "auprc": 0.6357,
+      "mcc": 0.3224,
+      "n": 969,
+      "spearman": 0.4296
+    }
+  },
+  "remove_interchain_edges": {
+    "ablation": "remove_interchain_edges",
+    "overall": {
+      "auroc": 0.7498,
+      "auprc": 0.6379,
+      "mcc": 0.3446,
+      "n": 1052,
+      "spearman": 0.4424
+    },
+    "interface_proximal": {
+      "auroc": 0.7182,
+      "auprc": 0.6392,
+      "mcc": 0.3199,
+      "n": 969,
+      "spearman": 0.4056
+    }
+  },
+  "zero_edge_distance": {
+    "ablation": "zero_edge_distance",
+    "overall": {
+      "auroc": 0.7459,
+      "auprc": 0.624,
+      "mcc": 0.2803,
+      "n": 1052,
+      "spearman": 0.436
+    },
+    "interface_proximal": {
+      "auroc": 0.7134,
+      "auprc": 0.6251,
+      "mcc": 0.255,
+      "n": 969,
+      "spearman": 0.3958
+    }
+  },
+  "zero_structural_features": {
+    "ablation": "zero_structural_features",
+    "overall": {
+      "auroc": 0.5889,
+      "auprc": 0.4589,
+      "mcc": 0.0,
+      "n": 1052,
+      "spearman": 0.1334
+    },
+    "interface_proximal": {
+      "auroc": 0.5746,
+      "auprc": 0.4752,
+      "mcc": 0.0,
+      "n": 969,
+      "spearman": 0.1659
+    }
+  },
+  "shuffle_interchain": {
+    "ablation": "shuffle_interchain",
+    "overall": {
+      "auroc": 0.7573,
+      "auprc": 0.6383,
+      "mcc": 0.3606,
+      "n": 1052,
+      "spearman": 0.464
+    },
+    "interface_proximal": {
+      "auroc": 0.7264,
+      "auprc": 0.6395,
+      "mcc": 0.3311,
+      "n": 969,
+      "spearman": 0.4307
+    }
+  }
+}

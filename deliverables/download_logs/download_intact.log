@@ -1,0 +1,12 @@
+2026-04-11 15:08:02,366 INFO download https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact-micluster.zip -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/intact-micluster.zip
+2026-04-11 15:09:05,522 INFO extracted 2 files from intact-micluster.zip
+2026-04-11 15:09:23,725 INFO download https://ftp.ebi.ac.uk/pub/databases/intact/current/various/mutations.tsv -> /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/mutations/mutations.tsv
+2026-04-11 16:06:06,042 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/intact-micluster.zip
+2026-04-11 16:06:10,380 INFO skip extraction for intact-micluster.zip
+2026-04-11 16:06:10,976 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/mutations/mutations.tsv
+2026-04-11 16:24:40,248 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/intact-micluster.zip
+2026-04-11 16:24:44,542 INFO skip extraction for intact-micluster.zip
+2026-04-11 16:24:45,540 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/mutations/mutations.tsv
+2026-04-11 17:17:52,476 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/intact-micluster.zip
+2026-04-11 17:17:56,767 INFO skip extraction for intact-micluster.zip
+2026-04-11 17:17:57,577 INFO skip existing file /Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/mutations/mutations.tsv

@@ -1,0 +1,29 @@
+project_name: complexvar-benchmark
+seed: 17
+results_dir: results
+manifest_dir: data/manifests
+
+downloads:
+  burke_summary_url: https://archive.bioinfo.se/huintaf2/table_AF2_HURI_HuMap_UNIQUE.csv
+  burke_archive_api: https://api.figshare.com/v2/articles/16945039
+  clinvar_variant_summary_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz
+  clinvar_vcf_url: https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz
+  intact_mutations_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/features/mutations.tsv
+  intact_gc_map_url: https://ftp.ebi.ac.uk/pub/databases/intact/current/various/mutation_gc_map.txt
+  skempi_portal_url: https://life.bsc.es/pid/skempi2
+
+graph:
+  interface_cutoff_angstrom: 10.0
+  spatial_edge_cutoff_angstrom: 8.0
+  subgraph_radius_angstrom: 12.0
+  max_nodes: 256
+
+splits:
+  mmseqs_identity: 0.30
+  train_fraction: 0.70
+  val_fraction: 0.15
+  test_fraction: 0.15
+
+evaluation:
+  bootstrap_iterations: 250
+  bootstrap_unit: protein_group

@@ -1,0 +1,32 @@
+skempi:
+  binary_positive_ddg: 1.5
+  binary_negative_abs_ddg: 0.5
+
+intact:
+  positive:
+    - disrupting
+    - decreasing
+  negative:
+    - no effect
+  exclude:
+    - increasing
+    - causing
+    - undefined
+    - conflicting
+
+clinvar:
+  positive:
+    - Pathogenic
+    - Likely pathogenic
+    - Pathogenic/Likely pathogenic
+  negative:
+    - Benign
+    - Likely benign
+    - Benign/Likely benign
+  exclude_contains:
+    - uncertain
+    - conflicting
+    - somatic
+    - risk factor
+    - association
+    - drug response

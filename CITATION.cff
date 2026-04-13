@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: ComplexVar Benchmark
+message: If you use this repository, please cite the software and the underlying data sources.
+type: software
+authors:
+  - family-names: Suhaan
+    given-names: Contributor
+repository-code: https://github.com/<your-user-or-org>/complexvar-benchmark
+license: MIT
+version: 0.1.0
+date-released: 2026-04-11
+abstract: >
+  Reproducible benchmark for evaluating whether protein-complex structural
+  context improves prediction of interaction-disrupting missense variants.

@@ -1,0 +1,42 @@
+{
+  "classification": {
+    "auprc": 0.6690970740602217,
+    "auroc": 0.7907929051838521,
+    "bootstrap_family_group": {},
+    "bootstrap_protein_group": {},
+    "brier": 0.19488558590777896,
+    "ece": 0.11315643267720202,
+    "f1": 0.6788008565310493,
+    "mcc": 0.44218929095813025,
+    "n_samples": 1052
+  },
+  "classification_by_source": {
+    "SKEMPI": {
+      "auprc": 0.6690970740602217,
+      "auroc": 0.7907929051838521,
+      "bootstrap_family_group": {},
+      "bootstrap_protein_group": {},
+      "brier": 0.19488558590777896,
+      "ece": 0.11315643267720202,
+      "f1": 0.6788008565310493,
+      "mcc": 0.44218929095813025,
+      "n_samples": 1052
+    }
+  },
+  "regression": {
+    "mae": 1.0402094938437287,
+    "n_samples": 1052,
+    "pearson": 0.4359946272152041,
+    "rmse": 1.5975067929668603,
+    "spearman": 0.5200013240190411
+  },
+  "regression_by_source": {
+    "SKEMPI": {
+      "mae": 1.0402094938437287,
+      "n_samples": 1052,
+      "pearson": 0.4359946272152041,
+      "rmse": 1.5975067929668603,
+      "spearman": 0.5200013240190411
+    }
+  }
+}

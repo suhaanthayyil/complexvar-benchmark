@@ -1,0 +1,28 @@
+{
+  "feature_columns": [
+    "min_inter_chain_distance",
+    "distance_to_interface",
+    "inter_chain_contacts",
+    "burial_proxy",
+    "solvent_proxy",
+    "relative_sasa",
+    "b_factor_or_plddt",
+    "b_factor",
+    "local_degree",
+    "is_interface",
+    "interface_proximal",
+    "delta_charge",
+    "delta_hydrophobicity",
+    "delta_volume",
+    "delta_polarity",
+    "blosum62_score",
+    "changed_to_gly",
+    "changed_to_pro",
+    "changed_to_cys",
+    "mutation_unchanged",
+    "secondary_structure_helix",
+    "secondary_structure_sheet",
+    "secondary_structure_loop"
+  ],
+  "model_name": "struct_hgb"
+}

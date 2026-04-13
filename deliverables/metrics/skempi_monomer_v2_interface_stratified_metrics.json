@@ -1,0 +1,38 @@
+{
+  "interface_distal": {
+    "auprc": 0.3333333333333333,
+    "auroc": 0.962962962962963,
+    "bootstrap_family_group": {},
+    "bootstrap_protein_group": {},
+    "brier": 0.03595132296710115,
+    "ece": 0.11386943610766562,
+    "f1": 0.4,
+    "mcc": 0.3905058974805351,
+    "n_samples": 83
+  },
+  "interface_proximal": {
+    "auprc": 0.6707812903621222,
+    "auroc": 0.7653114869009024,
+    "bootstrap_family_group": {},
+    "bootstrap_protein_group": {},
+    "brier": 0.20849915022571108,
+    "ece": 0.1185845260357463,
+    "f1": 0.6803013993541442,
+    "mcc": 0.407964187394069,
+    "n_samples": 969
+  },
+  "regression_interface_distal": {
+    "mae": 0.28139269458556393,
+    "n_samples": 83,
+    "pearson": 0.184523745433684,
+    "rmse": 0.4043813922840012,
+    "spearman": 0.03131646016038119
+  },
+  "regression_interface_proximal": {
+    "mae": 1.105206185627452,
+    "n_samples": 969,
+    "pearson": 0.4196780186581812,
+    "rmse": 1.6603059913547997,
+    "spearman": 0.504025894536103
+  }
+}

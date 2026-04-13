@@ -1,0 +1,172 @@
+{
+  "interface_distal": {
+    "auprc": 0.25,
+    "auroc": 0.9444444444444444,
+    "bootstrap_family_group": {
+      "auprc": {
+        "lower": 0.15476190476190477,
+        "mean": 0.2900772798587448,
+        "upper": 0.3666666666666667
+      },
+      "auroc": {
+        "lower": 0.888157894736842,
+        "mean": 0.9405634993891384,
+        "upper": 0.9747474747474747
+      },
+      "brier": {
+        "lower": 0.025323358613512433,
+        "mean": 0.03498954286885218,
+        "upper": 0.045404660374704975
+      },
+      "ece": {
+        "lower": 0.08948241128733861,
+        "mean": 0.10396768249176168,
+        "upper": 0.12433884771320475
+      },
+      "f1": {
+        "lower": 0.0,
+        "mean": 0.0,
+        "upper": 0.0
+      },
+      "mcc": {
+        "lower": 0.0,
+        "mean": 0.0,
+        "upper": 0.0
+      }
+    },
+    "bootstrap_protein_group": {
+      "auprc": {
+        "lower": 0.1,
+        "mean": 0.3615461455450988,
+        "upper": 1.0
+      },
+      "auroc": {
+        "lower": 0.8378378378378378,
+        "mean": 0.9406210303574779,
+        "upper": 1.0
+      },
+      "brier": {
+        "lower": 0.017294794647531,
+        "mean": 0.03201930117602563,
+        "upper": 0.04664503801125315
+      },
+      "ece": {
+        "lower": 0.08536051685900417,
+        "mean": 0.10339144852675461,
+        "upper": 0.12559015651025754
+      },
+      "f1": {
+        "lower": 0.0,
+        "mean": 0.0,
+        "upper": 0.0
+      },
+      "mcc": {
+        "lower": 0.0,
+        "mean": 0.0,
+        "upper": 0.0
+      }
+    },
+    "brier": 0.03134659486213052,
+    "ece": 0.0950912264858256,
+    "f1": 0.0,
+    "macro_family_group_auprc": 0.3666666666666667,
+    "macro_family_group_auroc": 0.9342105263157895,
+    "macro_family_group_brier": 0.04807298470076302,
+    "macro_family_group_ece": 0.13570158810764799,
+    "macro_family_group_f1": 0.0,
+    "macro_family_group_mcc": 0.0,
+    "macro_protein_group_auprc": 0.625,
+    "macro_protein_group_auroc": 0.9347826086956521,
+    "macro_protein_group_brier": 0.050834794599030536,
+    "macro_protein_group_ece": 0.13611709458305782,
+    "macro_protein_group_f1": 0.0,
+    "macro_protein_group_mcc": 0.0,
+    "mcc": 0.0,
+    "n_samples": 83
+  },
+  "interface_proximal": {
+    "auprc": 0.6828858799720314,
+    "auroc": 0.7621484272321037,
+    "bootstrap_family_group": {
+      "auprc": {
+        "lower": 0.6169761448363138,
+        "mean": 0.6916407569128308,
+        "upper": 0.8041377637361137
+      },
+      "auroc": {
+        "lower": 0.7064470389664542,
+        "mean": 0.760043623919905,
+        "upper": 0.8116447460941747
+      },
+      "brier": {
+        "lower": 0.1778479111465182,
+        "mean": 0.20001590799367278,
+        "upper": 0.21948239616564372
+      },
+      "ece": {
+        "lower": 0.05005676637591568,
+        "mean": 0.09397558598243995,
+        "upper": 0.14521684724527803
+      },
+      "f1": {
+        "lower": 0.5763622728366121,
+        "mean": 0.641935250114102,
+        "upper": 0.7086930442000887
+      },
+      "mcc": {
+        "lower": 0.23256642053980517,
+        "mean": 0.341565262978115,
+        "upper": 0.435574718250549
+      }
+    },
+    "bootstrap_protein_group": {
+      "auprc": {
+        "lower": 0.6190635895892528,
+        "mean": 0.6896769136550246,
+        "upper": 0.7738055206251375
+      },
+      "auroc": {
+        "lower": 0.7134352502506793,
+        "mean": 0.7615597694839753,
+        "upper": 0.809207326986598
+      },
+      "brier": {
+        "lower": 0.18122208959521405,
+        "mean": 0.19982006118899714,
+        "upper": 0.21828666896623775
+      },
+      "ece": {
+        "lower": 0.048104138831946724,
+        "mean": 0.09074929778374861,
+        "upper": 0.14699507631494452
+      },
+      "f1": {
+        "lower": 0.5740432162295419,
+        "mean": 0.6402172406432126,
+        "upper": 0.6965361560249907
+      },
+      "mcc": {
+        "lower": 0.2633722914088488,
+        "mean": 0.3454905229049463,
+        "upper": 0.4198085467799546
+      }
+    },
+    "brier": 0.20033340409677441,
+    "ece": 0.07843176372030217,
+    "f1": 0.6435754189944134,
+    "macro_family_group_auprc": 0.6850924253772566,
+    "macro_family_group_auroc": 0.7058868339837053,
+    "macro_family_group_brier": 0.20670242543604953,
+    "macro_family_group_ece": 0.2833398668480951,
+    "macro_family_group_f1": 0.5461756008753261,
+    "macro_family_group_mcc": 0.28364595518142793,
+    "macro_protein_group_auprc": 0.7113172870396226,
+    "macro_protein_group_auroc": 0.7081164702015263,
+    "macro_protein_group_brier": 0.20557059404864853,
+    "macro_protein_group_ece": 0.2821430897944714,
+    "macro_protein_group_f1": 0.5306137150704668,
+    "macro_protein_group_mcc": 0.26738710020667966,
+    "mcc": 0.34869601526687866,
+    "n_samples": 969
+  }
+}

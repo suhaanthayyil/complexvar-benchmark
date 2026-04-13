@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "complexvar-benchmark"
+version = "0.1.0"
+description = "Reproducible benchmark for interaction-disrupting missense variant prediction on AlphaFold complexes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "ComplexVar contributors" }
+]
+dependencies = [
+  "biopython>=1.84",
+  "joblib>=1.4",
+  "matplotlib>=3.8",
+  "networkx>=3.2",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pyyaml>=6.0",
+  "requests>=2.31",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "seaborn>=0.13",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+boost = [
+  "xgboost>=2.0",
+]
+workflow = [
+  "snakemake>=8.10",
+]
+sequence = [
+  "fair-esm>=2.0.0",
+  "transformers>=4.41",
+  "torch>=2.2",
+]
+gnn = [
+  "torch>=2.2",
+  "torch-geometric>=2.5",
+]
+dev = [
+  "black>=24.4",
+  "isort>=5.13",
+  "pytest>=8.2",
+  "pytest-cov>=5.0",
+  "ruff>=0.4",
+]
+
+[project.scripts]
+complexvar = "complexvar.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+src_paths = ["src", "scripts", "tests"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+src = ["src", "scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = []

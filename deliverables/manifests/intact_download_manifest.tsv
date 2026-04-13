@@ -1,0 +1,3 @@
+dataset	downloaded_at_utc	local_path	md5	notes	size_bytes	source_record	source_url	status
+intact	2026-04-11T21:17:54.619918+00:00	/Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/intact-micluster.zip	04c6e53a37b5351f29d02ec86780c44c		893211920	intact_psimitab	https://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact-micluster.zip	skipped
+intact	2026-04-11T21:17:57.655564+00:00	/Users/suhaan/Documents/Coding/NovelRP/data/raw/intact/mutations/mutations.tsv	f735a88cc2d77bceb89d7bb84cac522c		33615072	intact_mutations	https://ftp.ebi.ac.uk/pub/databases/intact/current/various/mutations.tsv	skipped
