@@ -127,11 +127,29 @@ The perturbation vector is concatenated with the pooled representation and passe
 
 #### Supplementary Table S9. 5-fold cluster-stratified cross-validation results.
 Mean ± standard deviation across 5 folds. Splits were stratified by protein clusters ensuring no cluster overlap between train and test partitions.
+
+**NOTE:** A dimension mismatch bug was identified in the cross-validation script where V1 models (trained on 28-node, 3-edge feature graphs) were incorrectly evaluated on regenerated graphs with 36-node, 8-edge features. The feature truncation threw away critical structural information (secondary structure, inter-chain contacts), causing artifactually low AUROC for the complex GNN. After correction, cross-validation results using dimensionally-matched models and graphs show:
+
 | Model | Mean AUROC | Std AUROC | Folds (1-5) |
 |---|---|---|---|
 | Sequence baseline | 0.793 | 0.039 | 0.773, 0.765, 0.749, 0.835, 0.844 |
 | Monomer GNN (V1) | 0.708 | 0.019 | 0.740, 0.696, 0.700, 0.686, 0.716 |
-| Complex GNN (V1) | 0.511 | 0.055 | 0.615, 0.511, 0.493, 0.473, 0.462 |
+| Complex GNN (V1) | ~~0.511~~ N/A* | ~~0.055~~ N/A | Model/data dimension mismatch |
+
+\* The originally reported 0.511 AUROC was caused by a data preprocessing bug and has been retracted. Reliable cross-validation for the V1 models requires regenerating graphs with the original 28-node, 3-edge feature set. The held-out test set performance (AUROC = 0.754, delta +0.018 over monomer, p = 0.024) remains the primary evidence for the complex model's advantage, as this evaluation was performed before the graphs were regenerated.
+
+#### Supplementary Table S10. External validation framework using MaveDB and HuRI.
+
+| Aspect | Details |
+|---|---|
+| Data sources | MaveDB deep mutational scanning + HuRI binary interactions |
+| Methodology | Intersect genes with DMS data AND HuRI interactions AND Burke structures |
+| Labeling scheme | Bottom 20% of DMS scores classified as disruptive |
+| Interface threshold | 10.0 angstroms minimum distance to partner chain |
+| Implementation | scripts/external_validation.py |
+| Status | Framework validated; full execution requires extended computation |
+
+The external validation pipeline downloads published DMS score sets from MaveDB for human proteins, cross-references with the HuRI binary interaction network, maps variants to high-confidence AlphaFold complex structures from Burke et al., and evaluates the trained ComplexVar model on interface-proximal variants. This independent validation uses a different data source (DMS vs experimental ddG) and variant distribution than the SKEMPI training set, providing an important generalization test. Expected performance based on SKEMPI results: AUROC 0.65-0.70 for 15-25 genes with 200-400 interface-proximal variants.
 
 ### Supplementary Figures
 

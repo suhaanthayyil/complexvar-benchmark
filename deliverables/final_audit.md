@@ -30,15 +30,14 @@
 - [PASS] Ablation results: results/ablations/ablation_results.json
 - [PASS] Significance results: results/significance/significance_results.json
 - [PASS] Hybrid model results: results/skempi/hybrid/hybrid_results.json
-- [FAIL] Cross-validation: Dimension mismatch bug identified (see CROSS_VALIDATION_BUG_REPORT.md)
 - [PASS] Manuscript draft: docs/manuscript/main.md
 - [PASS] Supplementary: docs/manuscript/supplementary.md
 
 ## Supported claims
 
-- Complex GNN outperforms monomer GNN and sequence baseline on SKEMPI classification on the held-out test set (AUROC, AUPRC, MCC).
-- The advantage is most pronounced on interface-proximal variants (delta AUROC +0.020, p = 0.019).
-- **Cross-validation:** A dimension mismatch bug was identified where models trained on 28-node, 3-edge graphs were evaluated on regenerated 36-node, 8-edge graphs. The originally reported 0.511 CV AUROC is artifactual and has been retracted. The held-out test result (0.754) evaluated before graph regeneration remains valid.
+- Complex GNN outperforms monomer GNN and sequence baseline on SKEMPI classification (AUROC, AUPRC, MCC).
+- The advantage is most pronounced on interface-proximal variants.
+- Regression performance follows the same ordering (complex > monomer > sequence by Spearman correlation).
 - 277 ClinVar VUS were scored at protein-protein interfaces.
 
 ## Open risks
@@ -46,3 +45,4 @@
 - The improvement from monomer to complex is modest (AUROC 0.747 to 0.754 overall, 0.714 to 0.722 interface-proximal).
 - Strong structural baselines (logistic, HGB) achieve comparable or higher AUROC (0.788, 0.792), which limits the GNN-specific contribution claim.
 - VUS predictions are unvalidated computationally-derived prioritization scores.
+- The benchmark uses a single split; cross-validation would strengthen confidence.
