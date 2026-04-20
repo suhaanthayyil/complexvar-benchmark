@@ -138,19 +138,6 @@ Mean ± standard deviation across 5 folds. Splits were stratified by protein clu
 
 \* The originally reported 0.511 AUROC was caused by a data preprocessing bug and has been retracted. Reliable cross-validation for the V1 models requires regenerating graphs with the original 28-node, 3-edge feature set. The held-out test set performance (AUROC = 0.754, delta +0.018 over monomer, p = 0.024) remains the primary evidence for the complex model's advantage, as this evaluation was performed before the graphs were regenerated.
 
-#### Supplementary Table S10. External validation framework using MaveDB and HuRI.
-
-| Aspect | Details |
-|---|---|
-| Data sources | MaveDB deep mutational scanning + HuRI binary interactions |
-| Methodology | Intersect genes with DMS data AND HuRI interactions AND Burke structures |
-| Labeling scheme | Bottom 20% of DMS scores classified as disruptive |
-| Interface threshold | 10.0 angstroms minimum distance to partner chain |
-| Implementation | scripts/external_validation.py |
-| Status | Framework validated; full execution requires extended computation |
-
-The external validation pipeline downloads published DMS score sets from MaveDB for human proteins, cross-references with the HuRI binary interaction network, maps variants to high-confidence AlphaFold complex structures from Burke et al., and evaluates the trained ComplexVar model on interface-proximal variants. This independent validation uses a different data source (DMS vs experimental ddG) and variant distribution than the SKEMPI training set, providing an important generalization test. Expected performance based on SKEMPI results: AUROC 0.65-0.70 for 15-25 genes with 200-400 interface-proximal variants.
-
 ### Supplementary Figures
 
 #### Supplementary Figure S1. Training loss and validation AUROC curves for all three learned models.
