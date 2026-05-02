@@ -131,7 +131,7 @@ def scan_text_policy(root: Path) -> list[PolicyViolation]:
     for path in _tracked_files(root):
         try:
             text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
+        except (UnicodeDecodeError, FileNotFoundError):
             continue
         for line_number, line in enumerate(text.splitlines(), start=1):
             if any(bad_dash in line for bad_dash in FORBIDDEN_DASHES):
