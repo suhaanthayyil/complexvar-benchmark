@@ -1,0 +1,41 @@
+{
+  "complex_gnn": {
+    "mean_auroc": 0.7507,
+    "std_auroc": 0.0437,
+    "ci_lower": 0.7199,
+    "ci_upper": 0.7953,
+    "per_fold_auroc": [
+      0.8353,
+      0.7349,
+      0.7354,
+      0.7084,
+      0.7396
+    ]
+  },
+  "monomer_gnn": {
+    "mean_auroc": 0.7704,
+    "std_auroc": 0.047,
+    "ci_lower": 0.7437,
+    "ci_upper": 0.8172,
+    "per_fold_auroc": [
+      0.864,
+      0.7426,
+      0.7513,
+      0.7409,
+      0.7532
+    ]
+  },
+  "paired_delta": {
+    "mean_delta": -0.0197,
+    "std_delta": 0.0094,
+    "ci_lower": -0.0276,
+    "ci_upper": -0.0117,
+    "per_fold_delta": [
+      -0.0287,
+      -0.0077,
+      -0.0159,
+      -0.0325,
+      -0.0135
+    ]
+  }
+}
