@@ -125,18 +125,35 @@ The perturbation vector is concatenated with the pooled representation and passe
 | Hybrid HGB | 0.781 | 0.653 | 0.429 | 0.754 |
 | Hybrid MLP | 0.764 | 0.648 | 0.334 | 0.734 |
 
-#### Supplementary Table S9. 5-fold cluster-stratified cross-validation results.
-Mean ± standard deviation across 5 folds. Splits were stratified by protein clusters ensuring no cluster overlap between train and test partitions.
+#### Supplementary Table S9. 5-fold protein-grouped cross-validation results.
+Mean +/- standard deviation across 5 folds. Splits were stratified by protein complex (structure_id) using GroupKFold, ensuring no complex appears in both train and test partitions within any fold. Both GNN models were trained from scratch on V2 graphs (36 node features, 11 edge features) for each fold with the same architecture and hyperparameters as the held-out evaluation.
 
-**NOTE:** A dimension mismatch bug was identified in the cross-validation script where V1 models (trained on 28-node, 3-edge feature graphs) were incorrectly evaluated on regenerated graphs with 36-node, 8-edge features. The feature truncation threw away critical structural information (secondary structure, inter-chain contacts), causing artifactually low AUROC for the complex GNN. After correction, cross-validation results using dimensionally-matched models and graphs show:
+| Model | Mean AUROC | Std AUROC | 95% CI | Folds (1-5) |
+|---|---|---|---|---|
+| Monomer GNN | 0.770 | 0.047 | [0.744, 0.817] | 0.864, 0.743, 0.751, 0.741, 0.753 |
+| Complex GNN | 0.751 | 0.044 | [0.720, 0.795] | 0.835, 0.735, 0.735, 0.708, 0.740 |
+| Paired delta (complex - monomer) | -0.020 | 0.009 | [-0.028, -0.012] | -0.029, -0.008, -0.016, -0.033, -0.014 |
 
-| Model | Mean AUROC | Std AUROC | Folds (1-5) |
-|---|---|---|---|
-| Sequence baseline | 0.793 | 0.039 | 0.773, 0.765, 0.749, 0.835, 0.844 |
-| Monomer GNN (V1) | 0.708 | 0.019 | 0.740, 0.696, 0.700, 0.686, 0.716 |
-| Complex GNN (V1) | ~~0.511~~ N/A* | ~~0.055~~ N/A | Model/data dimension mismatch |
+The cross-validation results show that the monomer GNN consistently outperforms the complex GNN across all 5 folds (mean delta = -0.020, 95% CI [-0.028, -0.012]). This contrasts with the held-out test set evaluation where the complex GNN achieves higher AUROC (0.754 vs 0.747). The discrepancy likely reflects the greater parameter count and architectural complexity of the complex GNN, which benefits from favorable training conditions but does not consistently generalize across different protein-grouped splits. This finding underscores the importance of cross-validation for assessing model robustness and suggests that the held-out test advantage may be partially due to the specific train-test split.
 
-\* The originally reported 0.511 AUROC was caused by a data preprocessing bug and has been retracted. Reliable cross-validation for the V1 models requires regenerating graphs with the original 28-node, 3-edge feature set. The held-out test set performance (AUROC = 0.754, delta +0.018 over monomer, p = 0.024) remains the primary evidence for the complex model's advantage, as this evaluation was performed before the graphs were regenerated.
+#### Supplementary Table S10. Interface-proximal model comparison (all 5 models).
+AUROC with 95% bootstrap confidence intervals (10,000 resamples) on the interface-proximal subset of the test set (n = 770 variants within 8 angstroms of the partner chain). Paired bootstrap p-values test whether the complex GNN significantly differs from each comparison model.
+
+| Model | AUROC | 95% CI | Delta vs Complex GNN | p-value |
+|---|---|---|---|---|
+| Sequence | 0.641 | [0.602, 0.681] | -0.061 | 0.003 |
+| Monomer GNN | 0.682 | [0.644, 0.719] | -0.020 | 0.022 |
+| Complex GNN | 0.702 | [0.665, 0.739] | -- | -- |
+| Structure (logistic) | 0.740 | [0.704, 0.774] | +0.038 | 0.992 |
+| Structure (HGB) | 0.750 | [0.716, 0.784] | +0.048 | 0.998 |
+
+#### Supplementary VUS Scoring Details
+
+We applied the trained complex GNN model to score 277 interface-proximal VUS from ClinVar that mapped onto high-confidence Burke et al. protein complexes. Of these, 28 variants (10.1%) received pathogenicity probability scores above 0.5, distributed across multiple disease categories (Figure 3).
+
+Among the highest-scoring VUS, SEC23B p.Arg530Trp (pathogenicity probability 0.999, associated with congenital dyserythropoietic anemia) and DDX3X p.Arg362Cys (probability 0.999, associated with X-linked intellectual disability) represent candidates for further experimental investigation. The disease categories represented among high-scoring VUS include developmental disorders, neurological conditions, hematological diseases, and cardiovascular phenotypes. The full scored list is available in Supplementary Table S4.
+
+These predictions have not been experimentally validated and should be treated as computational prioritization aids. Experimental validation of predicted interaction disruption, ideally through co-immunoprecipitation or surface plasmon resonance assays, would be required before any clinical reclassification.
 
 ### Supplementary Figures
 
