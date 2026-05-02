@@ -1,0 +1,110 @@
+{
+  "interface_proximal": {
+    "n_samples": 770,
+    "n_positive": 358,
+    "n_negative": 412,
+    "model_aurocs": {
+      "sequence": {
+        "auroc": 0.6414,
+        "mean": 0.6416,
+        "std": 0.02,
+        "ci_lower": 0.6021,
+        "ci_upper": 0.6805
+      },
+      "monomer_gnn": {
+        "auroc": 0.6824,
+        "mean": 0.6823,
+        "std": 0.0192,
+        "ci_lower": 0.6444,
+        "ci_upper": 0.7192
+      },
+      "complex_gnn": {
+        "auroc": 0.7023,
+        "mean": 0.7023,
+        "std": 0.0188,
+        "ci_lower": 0.6646,
+        "ci_upper": 0.7389
+      },
+      "logistic": {
+        "auroc": 0.7403,
+        "mean": 0.7402,
+        "std": 0.0178,
+        "ci_lower": 0.7044,
+        "ci_upper": 0.7742
+      },
+      "hgb": {
+        "auroc": 0.7502,
+        "mean": 0.7501,
+        "std": 0.0174,
+        "ci_lower": 0.7155,
+        "ci_upper": 0.7838
+      }
+    },
+    "paired_bootstrap": {
+      "complex_vs_sequence": {
+        "delta_mean": 0.0607,
+        "delta_ci_lower": 0.0162,
+        "delta_ci_upper": 0.106,
+        "p_value": 0.0028
+      },
+      "complex_vs_monomer_gnn": {
+        "delta_mean": 0.02,
+        "delta_ci_lower": 0.0007,
+        "delta_ci_upper": 0.0398,
+        "p_value": 0.0217
+      },
+      "complex_vs_logistic": {
+        "delta_mean": -0.0379,
+        "delta_ci_lower": -0.0687,
+        "delta_ci_upper": -0.0071,
+        "p_value": 0.9924
+      },
+      "complex_vs_hgb": {
+        "delta_mean": -0.0478,
+        "delta_ci_lower": -0.0809,
+        "delta_ci_upper": -0.0148,
+        "p_value": 0.9976
+      }
+    }
+  },
+  "overall": {
+    "n_samples": 819,
+    "model_aurocs": {
+      "sequence": {
+        "auroc": 0.6457,
+        "mean": 0.6458,
+        "std": 0.0194,
+        "ci_lower": 0.6083,
+        "ci_upper": 0.6836
+      },
+      "monomer_gnn": {
+        "auroc": 0.7137,
+        "mean": 0.7136,
+        "std": 0.0177,
+        "ci_lower": 0.6784,
+        "ci_upper": 0.7477
+      },
+      "complex_gnn": {
+        "auroc": 0.7315,
+        "mean": 0.7315,
+        "std": 0.0173,
+        "ci_lower": 0.6968,
+        "ci_upper": 0.7648
+      },
+      "logistic": {
+        "auroc": 0.7651,
+        "mean": 0.765,
+        "std": 0.0163,
+        "ci_lower": 0.7325,
+        "ci_upper": 0.7965
+      },
+      "hgb": {
+        "auroc": 0.7741,
+        "mean": 0.774,
+        "std": 0.0163,
+        "ci_lower": 0.7411,
+        "ci_upper": 0.8054
+      }
+    }
+  }
+}
